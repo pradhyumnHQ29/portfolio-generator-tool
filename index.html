@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="inputSection">
+    <h1>Portfolio Generator</h1>
+
+    <input type="file" id="photoInput" accept="image/*">
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <textarea id="bioInput" placeholder="Short Bio"></textarea>
+    <textarea id="aboutInput" placeholder="About You (Detailed)"></textarea>
+    <input type="text" id="skillsInput" placeholder="Skills (comma separated)">
+    <textarea id="projectsInput" placeholder="Projects (comma separated)"></textarea>
+    <textarea id="experienceInput" placeholder="Work Experience"></textarea>
+    <textarea id="knowledgeInput" placeholder="Knowledge Summary"></textarea>
+    <input type="email" id="emailInput" placeholder="Contact Email">
+    <input type="url" id="githubInput" placeholder="GitHub Link">
+    <input type="url" id="linkedinInput" placeholder="LinkedIn Link">
+
+    <select id="themeSelect">
+        <option value="theme1">Ocean Theme</option>
+        <option value="theme2">Sunset Theme</option>
+        <option value="theme3">Forest Theme</option>
+        <option value="theme4">Dark Theme</option>
+    </select>
+
+    <button onclick="generatePortfolio()">Generate Portfolio</button>
+    <button onclick="downloadPortfolio()">Download Portfolio</button>
+</section>
+
+<section id="previewSection" class="hidden">
+    <h2>Live Preview</h2>
+    <iframe id="portfolioPreview" style="width: 100%; height: 600px; border: none;"></iframe>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

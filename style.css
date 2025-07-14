@@ -1,0 +1,49 @@
+/* Author: Pradhyumn Gupta
+   Date: 14/07/2025
+   Description: Styles for the portfolio generator apllication
+   Version: 1.0
+*/
+
+/* General Syles */
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+section {
+    background: #222;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #00c6ff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0090c6;
+}
+
+.hidden {
+    display: none;
+}
